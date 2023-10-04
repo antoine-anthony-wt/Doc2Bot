@@ -140,13 +140,13 @@ def index_data_to_chroma(df: pd.DataFrame, collection_name: str = "default_colle
 def query_chroma_collection(collection: Client, question: str, n_results: int = 5) -> List[dict]:
     try:
         logging.info(f'Querying Chroma collection with question: {question}')
-        print(f'Querying Chroma collection with question: {question}')
+        # print(f'Querying Chroma collection with question: {question}')
         results = collection.query(
             query_texts=[question],
             n_results=n_results,
             include=["distances", "documents"],
         )
-        logging.debug(f'Chroma Query Results: {results}')
+        logging.info(f'Chroma Query Results: {results}')
         # print(f'Chroma Query Results: {results}')
         return results
     except Exception as e:

@@ -177,12 +177,12 @@ def create_context(collection_name: str, question: str, max_len: int = 1800) -> 
         # If the documents were available, the below line would extract them
         contexts = results["documents"]
         logging.info(f'Contexts extracted: {contexts}')
-        print(f'Contexts extracted: {contexts}')
+        # print(f'Contexts extracted: {contexts}')
 
         flattened_contexts = [doc for sublist in contexts for doc in sublist]
         final_context = "\n\n###\n\n".join(flattened_contexts) if flattened_contexts else None
         logging.info(f'Final context: {final_context}')
-        print(f'Final context: {final_context}')
+        # print(f'Final context: {final_context}')
 
         return final_context
 
