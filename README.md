@@ -21,7 +21,7 @@ An integrated chatbot system that leverages the power of GPT-4 and Chroma embedd
 ## Setup:
 
 1. Clone the repository.
-2. Install required dependencies from `requirements.txt`.
+2. Install required dependencies from `requirements.txt`. You can do so using `pip install -r 'requirements.txt'`.
 3. Set up environment variables for OpenAI and ChromaDB in a `.env` file.
 4. Run `chatbot.py` and follow the prompts.
 
