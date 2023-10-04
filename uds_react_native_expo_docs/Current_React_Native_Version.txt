@@ -1,0 +1,1 @@
+The current version of React Native for iOS and Android is 0.72.0.
